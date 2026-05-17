@@ -1,0 +1,54 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\User;
+use App\Models\Product;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    use WithoutModelEvents;
+
+    /**
+     * Seed the application's database.
+     */
+    public function run(): void
+    {
+        // User::factory(10)->create();
+
+        User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+        ]);
+
+        // Add sample products
+        Product::create([
+            'name' => 'Laptop',
+            'sku' => 'LAPTOP-001',
+            'description' => 'High performance laptop',
+            'unit_price' => 999.99,
+            'quantity' => 5,
+            'min_stock' => 2,
+        ]);
+
+        Product::create([
+            'name' => 'Mouse',
+            'sku' => 'MOUSE-001',
+            'description' => 'Wireless mouse',
+            'unit_price' => 29.99,
+            'quantity' => 50,
+            'min_stock' => 10,
+        ]);
+
+        Product::create([
+            'name' => 'Keyboard',
+            'sku' => 'KEYBOARD-001',
+            'description' => 'Mechanical keyboard',
+            'unit_price' => 79.99,
+            'quantity' => 20,
+            'min_stock' => 5,
+        ]);
+    }
+}
