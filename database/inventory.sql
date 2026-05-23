@@ -94,6 +94,116 @@ INSERT INTO categories (name, created_at, updated_at) VALUES
 ('Home Appliances', NOW(), NOW()),
 ('Construction Materials', NOW(), NOW());
 
+INSERT INTO suppliers (
+    company_name,
+    contact_person,
+    phone,
+    email,
+    address,
+    created_at,
+    updated_at
+) VALUES
+
+(
+'TechSource Trading',
+'Juan Dela Cruz',
+'09171234567',
+'techsource@gmail.com',
+'Cebu City, Philippines',
+NOW(),
+NOW()
+),
+
+(
+'Prime Office Depot',
+'Maria Santos',
+'09181234567',
+'primeoffice@gmail.com',
+'Mandaue City, Philippines',
+NOW(),
+NOW()
+),
+
+(
+'Furniture Hub',
+'Carlo Reyes',
+'09191234567',
+'furniturehub@gmail.com',
+'Lapu-Lapu City, Philippines',
+NOW(),
+NOW()
+),
+
+(
+'EduSupply Center',
+'Angela Lim',
+'09201234567',
+'edusupply@gmail.com',
+'Talisay City, Philippines',
+NOW(),
+NOW()
+),
+
+(
+'FreshMart Distributors',
+'Kevin Tan',
+'09211234567',
+'freshmart@gmail.com',
+'Cagayan de Oro, Philippines',
+NOW(),
+NOW()
+),
+
+(
+'CleanPro Essentials',
+'Sofia Garcia',
+'09221234567',
+'cleanpro@gmail.com',
+'Davao City, Philippines',
+NOW(),
+NOW()
+),
+
+(
+'MedLine Supply Co.',
+'Mark Villanueva',
+'09231234567',
+'medline@gmail.com',
+'Iloilo City, Philippines',
+NOW(),
+NOW()
+),
+
+(
+'Accessory World',
+'Jasmine Co',
+'09241234567',
+'accessoryworld@gmail.com',
+'Bacolod City, Philippines',
+NOW(),
+NOW()
+),
+
+(
+'HomeTech Appliances',
+'Nathan Cruz',
+'09251234567',
+'hometech@gmail.com',
+'General Santos City, Philippines',
+NOW(),
+NOW()
+),
+
+(
+'BuildRight Materials',
+'Patricia Ong',
+'09261234567',
+'buildright@gmail.com',
+'Butuan City, Philippines',
+NOW(),
+NOW()
+);
+
 INSERT INTO products
 (
     name,
